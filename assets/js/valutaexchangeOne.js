@@ -57,4 +57,10 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 //  funktion der returnerer en veksel udregning skal skrives her
 
+function calculateExchange(dkAmount, rate){
+
+    let result = dkAmount * rate;
+    
+    return result
+}
 
