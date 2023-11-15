@@ -2,7 +2,7 @@
 
 
 // her skal du skrive din anonyme funktion
-let myAnonFunc= function(e){
+let myAnonFunc= function(){
     return 'Hello World';
 }
 
@@ -12,7 +12,7 @@ console.log(myAnonFunc());
 
 
 // her skal du skrive din arrow funktion
-let myArrowFunc= (e) =>{
+let myArrowFunc= () => {
     
     return 'Hollow World';
 }
