@@ -38,9 +38,29 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 }
 
-/* skriv din kode herunder.
+/* skriv din kode herunder. */
 
 
+// Opretter udvekslinger
+function makeExchange(euroRate, dollarRate, myDanishAmount){
+
+    // console.log('Euro rate: ' + euroRate);
+    // console.log('Dollar rate: ' + dollarRate);
+    // console.log('Dk amount: ' + myDanishAmount + 'kr.');
+    
+    let myEuros = calculateExchange(euroRate, myDanishAmount);
+    let myDollars = calculateExchange(dollarRate, myDanishAmount);
+
+    showResult(myEuros, myDollars, myDanishAmount);
+}
+
+// opretter valuta omregningen
+function calculateExchange(dkAmount, rate){
+
+    let result = dkAmount * rate;
+
+    return result
+}
 
 
 
